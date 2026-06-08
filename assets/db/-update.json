@@ -1,0 +1,42 @@
+{
+  "part-blade":        "2026/06/05 18:33:00",
+  "part-blade-collab": "2026/06/05 18:33:00",
+  "part-bit":          "2026/05/18 17:10:00",
+  "meta":              "2026/05/18 17:10:00",
+  "part-blade-divided":"2026/05/30 12:48:00",
+  "prod-gear":         "2026/05/16 00:10:00",
+  "prod-beys":         "2026/05/27 23:35:00",
+  "prod-keihin":       "2026/05/27 23:35:00",
+  "part-ratchet":      "2026/03/28 20:31:00",
+  "news": {
+    "2026-06-13":[{
+      "code":"BXG-54 starter","bey":"SmSb 5-60 K","ver":["メタルコート:サムライブルー","Metal Coat: Samurai Blue"],
+      "desc":["Soccer（足球）日本代表Ver.","05-16<a href=https://beyblade.takaratomy.co.jp/beyblade-x/news/news260415.html#myTable>一部店舖先行販賣</a>"]
+    },
+    {
+      "code":"CX-18 random booster select","name":["ブラキオウィップOW5-70Nr","Brachio Whip OW5-70Nr"],"type":"sta",
+      "desc":["以腕龍為motif","〔Outer〕Over Blade及〔Whip〕都是圓滑外重心","〔Narrow〕Bit：十齒小球軸"],
+      "imgs":["https://m.media-amazon.com/images/I/713NbKuawIL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/71JmpF1VFHL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/61HfVSPOhFL._AC_SX679_.jpg","https://m.media-amazon.com/images/S/aplus-media-library-service-media/a3b2f405-3879-4595-850d-05e53d5282f5.__CR0,0,970,600_PT0_SX970_V1___.jpg","https://m.media-amazon.com/images/S/aplus-media-library-service-media/bea11cad-771a-40d6-a2c4-9ce627ee1f86.__CR0,0,970,600_PT0_SX970_V1___.jpg","https://m.media-amazon.com/images/S/aplus-media-library-service-media/0119758f-fb74-4036-96f6-0d89212f645b.__CR0,0,970,600_PT0_SX970_V1___.jpg"]
+    },{
+      "code":"BX-51 string launcher",
+      "imgs":["https://m.media-amazon.com/images/I/51gwI+uzFUL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/51hxFoeZOQL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/613XPaNe6-L._AC_SX679_.jpg"]
+    }],
+    "2026-07":[{
+      "code":"UX-20 starter"
+    },{
+      "code":"BX-50 random booster"
+    },{
+      "code":"BXG-47 starter"
+    }],
+    "2026-08":[{
+      "code":"UX-21 deck set"
+    }],
+    "2026-08-29":[{
+      "code":"BXG-57 deck set","name":["エヴァンゲリオンデッキセット","Evangelion Deck Set"],
+      "desc":["以初号機、零号機、２号機作image設計"]
+    }],
+    "2026-09":[{
+      "code":"CX-19 random booster select"
+    }]
+  }
+}

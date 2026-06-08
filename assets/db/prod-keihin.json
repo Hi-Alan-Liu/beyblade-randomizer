@@ -1,0 +1,212 @@
+{
+    "BXH-22":{
+        "type":"t", "date":"2026-06", "note":"G3大會獎品（集齊後）", 
+        "ver":["メタルコート：ゴールド","Metal Coat: Gold"],
+        "img":["https://beyblade.takaratomy.co.jp/beyblade-x/event/_image/g3_gift1_2026.webp",{"width":"128%","left":"51%"}]
+    },
+    "BXH-25_01":{
+        "type":"t", "date":"2026-05", "note":"G1大會冠軍獎品", 
+        "ver":["メタルコート：ゴールド","Metal Coat: Gold"],
+        "img":["https://beyblade.takaratomy.co.jp/beyblade-x/event/_image/gp_pre2026_1.webp",{"width":"190%","top":"45%"}]
+    },
+    "BXH-25_02":{
+        "type":"t", "date":"2026-05", "note":"G1大會亞軍獎品", 
+        "ver":["メタルコート：シルバー","Metal Coat: Silver"],
+        "img":["https://beyblade.takaratomy.co.jp/beyblade-x/event/_image/gp_pre2026_2.webp",{"width":"190%","top":"45%"}]
+    },
+    "BXH-25_03":{
+        "type":"t", "date":"2026-05", "note":"G1大會季軍獎品", 
+        "ver":["メタルコート：ブロンズ","Metal Coat: Bronze"],
+        "img":["https://beyblade.takaratomy.co.jp/beyblade-x/event/_image/gp_pre2026_3.webp",{"width":"190%","top":"45%"}]
+    },
+    "BXC-13":{
+        "type":"m", "date":"2026-05", "note":"Full color版漫畫同梱", 
+        "ver":["メタルコート：ブルー","Metal Coat: Blue"], "link":"https://lifetunes-mall.jp/shop/g/gR20250033/",
+        "img":["https://corocoro-news.jp/wp-content/uploads/2025/05/f07d92190b453b7cb0b9d2ae5b80b03a.jpg",{"width":"95%","left":"45%"}]
+    },
+    "BXC-19":{
+        "type":"d", "date":"2026-04", "note":"コロコロ雜誌抽選・100名 （預計稍後與漫畫同梱）",
+        "ver":["メタルコート：イエロー","Metal Coat: Yellow"], "link":"https://corocoro-news.jp/news/400506/",
+        "img":["https://corocoro-news.jp/wp-content/uploads/2026/03/c5c3054c95fd6390e58be1cb9f0915ba.jpg"]
+    },
+    "BXG-56":{
+        "type":"m", "date":"2026-03", "note":"機台遊戲Fanbook同梱", 
+        "ver":["メタルコート：ブルー","Metal Coat: Blue"], "link":"https://trsp.bn-am.net/special/collabo_fanbook2025/#contents03",
+        "img":["https://pbs.twimg.com/media/HBFj5r8b0AAk_hl?format=jpg&name=large",95]
+    },
+    "BXC-18":{
+        "type":"g", "date":"2026-02", "note":"攻略本附錄", 
+        "ver":["メタルコート：レッド","Metal Coat: Red"], "link":"https://shogakukan-comic.jp/magazine?cd=0381002126",
+        "img":["https://pbs.twimg.com/media/HBFj0c8bsAAeKbg?format=jpg&name=large",110]
+    },
+    "BXC-12":{
+        "type":"m", "date":"2026-02", "note":"Full color版漫畫同梱", 
+        "ver":["メタルコート：オレンジ","Metal Coat: Orange"], "link":"https://lifetunes-mall.jp/shop/g/gR20250030/",
+        "img":["https://pbs.twimg.com/media/GjzKKRDa0AAaxOg?format=jpg&name=large",97]
+    },
+    "BXG-55":{
+        "type":"m", "date":"2025-12", "note":"コロコロ雜誌應募", 
+        "ver":["メタルコート：ブラック","Metal Coat: Black"], "link":"https://corocoro-news.jp/news/399068/",
+        "img":["https://corocoro-news.jp/wp-content/uploads/2025/11/ffa922810e98c8f245f5a2f52d470c71.jpg"]
+    },
+    "BXH-21_01":{
+        "type":"g", "date":"2025-12", "note":"購物滿額贈品",
+        "ver":["スペシャル","Special"], "link":"https://beyblade.takaratomy.co.jp/beyblade-x/news/news251114.html", 
+        "img":["https://beyblade.takaratomy.co.jp/beyblade-x/news/_image/news251114_bitV.webp",200]
+    },
+    "BXH-21_02":{
+        "type":"g", "date":"2025-12", "note":"購物滿額贈品",
+        "ver":["スペシャル","Special"], "link":"https://beyblade.takaratomy.co.jp/beyblade-x/news/news251114.html", 
+        "img":["https://beyblade.takaratomy.co.jp/beyblade-x/news/_image/news251114_bitD.webp",200]
+    },
+    "BXH-21_03":{
+        "type":"g", "date":"2025-12", "note":"購物滿額贈品",
+        "ver":["スペシャル","Special"], "link":"https://beyblade.takaratomy.co.jp/beyblade-x/news/news251114.html",
+        "img":["https://beyblade.takaratomy.co.jp/beyblade-x/news/_image/news251114_bitO.webp",200]
+    },
+    "BXH-20":{
+        "type":"g", "date":"2025-11", "note":"購物滿額贈品",
+        "ver":["スペシャル","Special"], "link":"https://beyblade.takaratomy.co.jp/beyblade-x/news/news251015_3.html",
+        "img":["https://beyblade.takaratomy.co.jp/beyblade-x/news/_image/news251015_3_point.webp",200]
+    },
+    "BXC-15":{
+        "type":"m", "date":"2025-11", "note":"コロコロ雜誌應募", 
+        "link":"https://corocoro-news.jp/news/398602/",
+        "img":["https://corocoro-news.jp/wp-content/uploads/2025/10/769ec69bf4024f902aa8b4908054b884.jpg"]
+    },
+    "BXG-38":{
+        "type":"m", "date":"2025-11", "note":"實物版遊戲同梱",
+        "ver":["レッド","Red"], "link":"https://www.cs.furyu.jp/beyblade2025/",
+        "img":["https://pbs.twimg.com/media/Gq9VsAaaAAcQkI4?format=jpg&name=large",100]
+    },
+    "BXG-39_01":{
+        "type":"d", "date":"2025-10", "note":"DMMくじLast Chance賞", 
+        "ver":["メタルコート：バイオレット","Metal Coat: Violet"], "link":"https://scratch.dmm.com/s3/dmmkuji_long_img/FUQSww6SpjwWNQJ5XcMisya7uu3pvDxk26JkdJ2Y.jpeg",
+        "img":["https://scratch.dmm.com/s3/dmmkuji_double_long_img/16/qcnjiLiMCt5LfHJ7cNY3iSbEaT295DHtBecaOTFG.jpeg",{"width":"360%","left":"-20%","top":"43%"}]
+    },
+    "BXG-39_02":{
+        "type":"d", "date":"2025-10", "note":"DMMくじA賞", 
+        "link":"https://scratch.dmm.com/s3/dmmkuji_long_img/FUQSww6SpjwWNQJ5XcMisya7uu3pvDxk26JkdJ2Y.jpeg",
+        "img":["https://scratch.dmm.com/s3/dmmkuji_double_long_img/16/qcnjiLiMCt5LfHJ7cNY3iSbEaT295DHtBecaOTFG.jpeg",{"width":"365%","left":"120%","top":"43%"}]
+    },
+    "BXH-14":{
+        "type":"d", "date":"2025-07", "note":"App抽獎獎品", 
+        "ver":["メタルコート：ゴールド","Metal Coat: Gold"],
+        "img":["https://takaratomymall.jp/img/goods/5/4904810954316_6c4a390e451f4e0d88c55a5dbf3f1f5a.png"]
+    },
+    "BXC-14":{
+        "type":"g", "date":"2025-07", "note":"コロコロ合體版雜誌附錄",
+        "link":"https://corocoro-news.jp/news/397017/",
+        "img":["https://corocoro-news.jp/wp-content/uploads/2025/06/dafb3d8b9744b924199470365546d041.jpg"]
+    },
+    "BXC-11":{
+        "type":"m", "date":"2025-05", "note":"コロコロ雜誌應募", 
+        "ver":["メタルコート：ホワイト","Metal Coat: White"], "link":"https://corocoro-news.jp/news/396091/",
+        "img":["https://corocoro-news.jp/wp-content/uploads/2025/04/4e0bd5ecc822c03193ad809c190f0a2d.jpg",104]
+    },
+    "BXH-16_01":{
+        "type":"t", "date":"2025-05", "note":"G1大會冠軍獎品", 
+        "ver":["メタルコート：ゴールド","Metal Coat: Gold"],
+        "img":["https://beyblade.takaratomy.co.jp/beyblade-x/event/_image/gp_pre2025_1.png",{"width":"200%","left":"52%"}]
+    },
+    "BXH-16_02":{
+        "type":"t", "date":"2025-05", "note":"G1大會亞軍獎品", 
+        "ver":["メタルコート：シルバー","Metal Coat: Silver"],
+        "img":["https://beyblade.takaratomy.co.jp/beyblade-x/event/_image/gp_pre2025_2.png",{"width":"200%","left":"52%"}]
+    },
+    "BXH-16_03":{
+        "type":"t", "date":"2025-05", "note":"G1大會季軍獎品", 
+        "ver":["メタルコート：ブロンズ","Metal Coat: Bronze"],
+        "img":["https://beyblade.takaratomy.co.jp/beyblade-x/event/_image/gp_pre2025_3.png",{"width":"200%","left":"54%"}]
+    },
+    "BXH-15":{
+        "type":"t", "date":"2025-04", "note":"G3大會獎品（集齊後）", 
+        "ver":["メタルコート：ゴールド","Metal Coat: Gold"],
+        "img":["https://beyblade.takaratomy.co.jp/beyblade-x/event/_image/g3_gift1_2025.webp",135]
+    },
+    "BXH-17":{
+        "type":"g", "date":"2025-03", "note":"月費會員加入贈品", 
+        "ver":["クリアブラック","Clear Black"],
+        "img":["https://takaratomymall.jp/img/goods/5/4904810953715_d1e01b6b57d6487e97188c2595366d43.jpg",80]
+    },
+    "BXC-08":{
+        "type":"g", "date":"2025-02", "note":"攻略本附錄", 
+        "ver":["メタルコート：オレンジ","Metal Coat: Orange"], "link":"https://corocoro-news.jp/news/394782/",
+        "img":["https://pbs.twimg.com/media/GjzKL90b0AAT4Xv?format=jpg&name=large",110]
+    },
+    "BXC-07":{
+        "type":"m", "date":"2025-01", "note":"コロコロ雜誌應募",
+        "ver":["メタルコート：グリーン","Metal Coat: Green"], "link":"https://corocoro-news.jp/news/393959/",
+        "img":["https://corocoro-news.jp/wp-content/uploads/2025/01/077a8d70f963739b153ad864b87cc523.jpg",98]
+    },
+    "BXC-09":{
+        "type":"m", "date":"2024-12", "note":"Full color版漫畫同梱",
+        "ver":["メタルコート：レッド","Metal Coat: Red"], "link":"https://lifetunes-mall.jp/shop/g/gR20240002/",
+        "img":["https://corocoro.jp/wp-content/uploads/2024/03/f701f1cdac42c7408a4ff6095be0ed1d.jpg"]
+    },
+    "BXC-05":{
+        "type":"m", "date":"2024-09", "note":"コロコロ雜誌應募",
+        "ver":["メタルコート：ネイビー","Metal Coat: Navy"], "link":"https://corocoro.jp/news/390251/",
+        "img":["https://corocoro.jp/wp-content/uploads/2024/08/7a8cdbff648686aec08ac1c37f7ea737.jpg",92]
+    },
+    "BXH-10":{
+        "type":"d", "date":"2024-07", "note":"App抽獎獎品", 
+        "ver":["ダブルメタルコート：<br>ブルー×グリーン","Double Metal Coat: Blue×Green"],
+        "img":["https://takaratomymall.jp/img/goods/L/4904810941569_baa550db36ea4e828b4688f84fab37a2.jpg"]
+    },
+    "BXG-16":{
+        "type":"m", "date":"2024-11", "note":"實物版遊戲同梱",
+        "ver":["メタルコート：ブルー","Metal Coat: Blue"], "link":"https://www.cs.furyu.jp/beyblade2024/",
+        "img":["https://www.cs.furyu.jp/beyblade2024/assets/img/guide/special_bey.png",90]
+    },
+    "BXC-03":{
+        "type":"g", "date":"2024-06", "note":"コロコロ雜誌附錄",
+        "ver":["メタルコート：ブルー","Metal Coat: Blue"], "link":"https://corocoro.jp/news/385187/",
+        "img":["https://corocoro.jp/wp-content/uploads/2024/05/745531bfaf43d87bc17ea9b9d5588099.jpg",100]
+    },
+    "BXH-09":{
+        "type":"t", "date":"2024-06", "note":"G3大會獎品（集齊後）", 
+        "ver":["メタルコート：ゴールド","Metal Coat: Gold"],
+        "img":["https://beyblade.takaratomy.co.jp/beyblade-x/event/_image/g3_gift1_2024.jpg",{"width":"120%","top":"52%"}]
+    },
+    "BXA-01":{
+        "type":"m", "date":"2024-02", "note":"香港壽司郎推廣活動",
+        "ver":["〈スシロー〉","〈Sushiro〉"], "link":"https://www.facebook.com/SUSHIROHONGKONG/posts/407971458462714",
+        "img":["https://pbs.twimg.com/media/HBha5JxbUAk2grt?format=jpg&name=large",90]
+    },
+    "BXC-02":{
+        "type":"m", "date":"2024-01", "note":"コロコロ雜誌應募",
+        "ver":["「スペシャルクロスベイ」","「SPX Bey」"], "link":"https://corocoro.jp/news/379029/",
+        "img":["https://corocoro.jp/wp-content/uploads/2023/12/f919dd35dc468956f947d2d2ab3551d1.jpg",115]
+    },
+    "BXC-01":{
+        "type":"g", "date":"2023-12", "note":"コロコロ雜誌附錄",
+        "link":"https://corocoro.jp/news/377761/",
+        "img":["../img/blade/PhFt.png",95]
+    },
+    "BXH-04_01":{
+        "type":"t", "date":"2023-12", "note":"G1大會冠軍獎品", 
+        "ver":["メタルコート：ゴールド","Metal Coat: Gold"],
+        "img":["https://beyblade.takaratomy.co.jp/beyblade-x/event/_image/g1_4.png",{"width":"200%","left":"52%"}]
+    },
+    "BXH-04_02":{
+        "type":"t", "date":"2023-12", "note":"G1大會亞軍獎品", 
+        "ver":["メタルコート：シルバー","Metal Coat: Silver"],
+        "img":["https://beyblade.takaratomy.co.jp/beyblade-x/event/_image/g1_5.png",{"width":"200%","left":"52%"}]
+    },
+    "BXH-04_03":{
+        "type":"t", "date":"2023-12", "note":"G1大會季軍獎品", 
+        "ver":["メタルコート：ブロンズ","Metal Coat: Bronze"],
+        "img":["https://beyblade.takaratomy.co.jp/beyblade-x/event/_image/g1_6.png",{"width":"200%","left":"54%"}]
+    },
+    "BXH-01":{
+        "type":"d", "date":"2023-09", "note":"App抽獎獎品", 
+        "ver":["メタルコート：ブルー","Metal Coat: Blue"],
+        "img":["https://takaratomymall.jp/img/goods/L/4904810910510_ac63b10874dd470eb52bd9e7200c55b4.jpg"]
+    },
+    "BXH-02":{
+        "type":"t", "date":"2023-07", "note":"G3大會獎品（集齊後）", 
+        "ver":["メタルコート：ゴールド","Metal Coat: Gold"],
+        "img":["https://beyblade.takaratomy.co.jp/beyblade-x/event/_image/gift1.jpg",{"width":"120%","top":"52%"}]
+    }
+}

@@ -1,0 +1,141 @@
+[{
+    "general": { 
+        "part": {
+            "names": {
+                "blade": {"chi": "刃擊環 鋼鐵戰刃", "eng": "BLADE", "jap": "ブレード"}, 
+                "chip": {"chi": "紋章鎖 鎖定紋章", "eng": "LOCK CHIP", "jap": "ロックチップ"},
+                "over": {"chi": "超越刃 超越戰刃", "eng": "OVER BLADE", "jap": "オーバーブレード"},
+                "main": {"chi": "主刃 主要戰刃", "eng": "MAIN BLADE", "jap": "メインブレード"},
+                "metal": {"chi": "金屬刃 鋼鐵戰刃", "eng": "METAL BLADE", "jap": "メタルブレード"},
+                "assist": {"chi": "支援刃 輔助戰刃", "eng": "ASSIST BLADE", "jap": "アシストブレード"},
+                "ratchet": {"chi": "核輪 固鎖輪盤", "eng": "RATCHET", "jap": "ラチェット"},
+                "bit": {"chi": "軸心", "eng": "BIT", "jap": "ビット"}
+            },
+            "named": ["blade","chip","main","metal"]
+        },
+        "blade": {
+            "sub": {
+                "CX": {
+                    "3": ["chip","main","assist"],
+                    "4": ["chip","metal","over","assist"],
+                    "delim": ".",
+                    "index": {"chip":0, "assist":-1, "main":0.333, "metal":0.25, "over":0.5}
+                }
+            }
+        },
+        "bit": {
+            "prefix": {
+                "B": {"eng": "Bound", "jap": "バウンド", "desc": "對Ratchet能以上下方向陷入"},
+                "D": {"eng": "Disk",  "jap": "ディスク", "desc": "加上圓盤狀重量器"},
+                "F": {"eng": "Free",  "jap": "フリー",   "desc": "對於Ratchet能自由迴轉"},
+                "G": {"eng": "Gear",  "jap": "ギヤ"    , "desc": "齒部延長"},
+                "H": {"eng": "High",  "jap": "ハイ"    , "desc": "高度提升10"},
+                "L": {"eng": "Low",   "jap": "ロー"    , "desc": "高度下降10"},
+                "M": {"eng": "Metal", "jap": "メタル"  , "desc": "使用金屬軸端"},
+                "R": {"eng": "Rubber","jap": "ラバー" ,  "desc": "橡膠製"},
+                "T": {"eng": "Trans", "jap": "トランス" ,"desc": "有高度模式轉換"},
+                "U": {"eng": "Under", "jap": "アンダー" ,"desc": "高度下降20"},
+                "W": {"eng": "Wall",  "jap": "ウォール" ,"desc": "軸端被筒狀壁包圍"}
+            }
+        },
+        "tile": {
+            "blade": {
+                "terms": ["重量","厚度"]
+            },
+            "ratchet": {
+                "height": {"high": 80, "mid": 65, "low": 50},
+                "terms": ["重量", "RING刃數", "BASE高度"]
+            },
+            "bit": {
+                "terms": ["重量", "GEAR齒數", "BURST耐性", "露出高度"],
+                "terms.fused": ["重量", "GEAR齒數", "BASE高度"]
+            }
+        }
+    }
+}, {
+    "glossary": {
+        "Upper": ["アッパー&攻擊", "旋轉時斜面把對手向上撞向空中，令其失去地面摩擦，更易被擊飛"],
+        "Smash": ["スマッシュ&攻擊", "旋轉時斜面把對手向下壓，令其傾側，更易失平衡倒下"],
+        "Down force": ["ダウンフォース", "旋轉時斜面把空氣推上，獲得向下的力，加強接地"],
+        "Damper": ["ダンパー", "阻尼器、避震器"],
+        "Launcher hook": ["ランチャーフック", "接近中央的三個與發射器掛勾接觸的部份"],
+        "X Line": ["Xライン", "對戰盤旁的齒條，令Bit的齒輪與其咬合時移動速度瞬間加速，為今代的最大特色"],
+        "X Dash": ["Xダッシュ", "因Bit的齒輪與對戰盤的X Line咬合時移動速度瞬間加速"],
+        "Burst": ["バースト", "擊至部件散開，第三代起的特色"]
+    }
+}, {
+    "search": [
+        {
+            "keywords": ["launcher","旋風","拉條","拉線"], 
+            "href": "/x/products/gear.html?launchers", "text": "發射器"
+        },
+        {
+            "keywords": ["launcher","橡膠","grip","stadium"], 
+            "href": "/x/products/gear.html?others", "text": "手把與對戰盤"
+        },
+        {
+            "keywords": ["HK","Hong Kong","香港","tclub","facebook","fb"], 
+            "href": "//facebook.com/manilimited", "text": "🇭🇰🇲🇴官方比賽 "
+        },
+        {
+            "keywords": ["HK","Hong Kong","香港","tclub","instagram","ig"], 
+            "href": "//instagram.com/mani_limited", "text": "🇭🇰🇲🇴官方比賽 "
+        },
+        {
+            "keywords": ["TW","Taiwan","台灣","facebook","fb"], 
+            "href": "//facebook.com/Beyblade2016", "text": "🇹🇼官方比賽 "
+        },
+        {
+            "keywords": ["TW","Taiwan","台灣","instagram","ig"], 
+            "href": "//instagram.com/beyblade.tw", "text": "🇹🇼官方比賽 "
+        },
+        {
+            "keywords": ["manga","corocoro","快樂快樂","最新資訊","コロコロ"],
+            "href": "//drive.google.com/drive/folders/1NHqckGBGUe0Kd57TqiFCZJ4G2qGGbvha", "text": "日文漫畫與情報"
+        },
+        {
+            "keywords": ["anime","卡通"],
+            "href": "//drive.google.com/drive/folders/1uRJA8OKiWT6NFa83si2DvgCA9kXkzp5Y", "text": "日文動畫"
+        },
+        {
+            "keywords": ["anime","卡通","素材"],
+            "href": "//beyblade.takaratomy.co.jp/anime/character/chara01.html", "text": "動畫角色"
+        },
+        {
+            "keywords": ["Takara Tomy","日本","產品","官方","官網"],
+            "href": "//beyblade.takaratomy.co.jp/beyblade-x/lineup/", "text": "TAKARA TOMY"
+        },
+        {
+            "keywords": ["Takara Tomy","日本","影片","最新情報資訊","YT","Youtube"],
+            "href": "//youtube.com/@BEYBLADEOfficialYouTube/videos", "text": "官方 "
+        },
+        {
+            "keywords": ["日本","最新產品"],
+            "href": "//amazon.co.jp/s?rh=n%3A2189319051%2Cp_n_date%3A2320554051", "text": "Amazon"
+        },
+        {
+            "keywords": ["iPhone","APP Store","應用程式","分數","抽獎","QR Code","通行證","BeyBattlePass"],
+            "href": "//apps.apple.com/tw/app/beyblade-x/id1670801696", "text": "官方APP iOS"
+        },
+        {
+            "keywords": ["Google Play Store","應用程式","分數","抽獎","QR Code","通行證","BeyBattlePass"],
+            "href": "//play.google.com/store/apps/details?id=jp.co.takaratomy.beyblade", "text": "官方APP Android"
+        },
+        {
+            "keywords": ["X","Twitter","推特","最新情報資訊","日本"],
+            "href": "//x.com/tbh_pr", "text": "官方 𝕏"
+        },
+        {
+            "keywords": ["iPhone","APP Store","應用程式","分數","通行證","BeyBattlePass"],
+            "href": "//apps.apple.com/tw/app/beyblader-helper/id6747081690", "text": "發射力測量替代APP iOS"
+        },
+        {
+            "keywords": ["Google Play Store","應用程式","分數","通行證","BeyBattlePass"],
+            "href": "//play.google.com/store/apps/details?id=com.burnie.Fake", "text": "發射力測量替代APP Android"
+        },
+        {
+            "keywords": ["TIER","強勢"],
+            "href": "//bbxweekly.com/2weeks", "text": "WBO比賽部件統計"
+        }
+    ]
+}]

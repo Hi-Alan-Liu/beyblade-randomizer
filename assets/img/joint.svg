@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 -75 100 150">
+  <style>
+      mask~* {fill: #ccc;}
+      mask~:not(:target) {display: none;}
+  </style>
+  <mask id="hole">
+    <rect x="-100" y="-100" width="200" height="200" fill="white"/>
+    <path d="
+      M 28, 14 L 16.5, 22.7 A28,28,0,0,1,-16.5, 22.7 L-28, 14 
+      L-28,-14 L-16.5,-22.7 A28,28,0,0,1, 16.5,-22.7 L 28,-14" fill="black"/>
+    <!-- r=28 t=0.3PI~ -->
+  </mask>
+  <circle id="simple" r="45" mask="url(#hole)"/>
+  <path id="normal" d="
+      M 31.8,-31.8 A45,45,0,0,1, 31.8, 31.8 L 42.9, 55.3 A70,70,0,0,1,-42.9, 55.3
+      L-31.8, 31.8 A45,45,0,0,1,-31.8,-31.8 L-42.9,-55.3 A70,70,0,0,1, 42.9,-55.3" mask="url(#hole)"/>
+  <!-- inner: r=45 t=~0.25PI  outer: r=70 t=0.29PI~ -->
+</svg>

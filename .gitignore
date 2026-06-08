@@ -1,0 +1,29 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 編輯器 / IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# 記錄 / 暫存
+*.log
+.cache/
+tmp/
+temp/
+
+# 相依套件（本專案零依賴，保留以防未來加入）
+node_modules/
+
+# 工具產生物（Claude Code / gstack browse 的暫存與日誌，非專案內容）
+.claude/
+.gstack/
+
+# QA 暫存截圖
+_qa/
+_verify.js
+
+# 注意：assets/img 圖庫與 assets/db 資料（從 x 專案搬移）為離線/線上選圖必要內容，務必入庫。

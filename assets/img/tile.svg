@@ -1,0 +1,55 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 150'>
+    <script>// <![CDATA[
+    const q = Object.fromEntries([...new URLSearchParams(location.search || location.hash.substring(1))].map(([p, v]) => [p, v || true]));
+    const Q = el => document.querySelector(el);
+    const add = (html, where) => where.insertAdjacentHTML('beforeend', html);
+    const root = document.querySelector(':root');
+    root.style.setProperty('--hue', q.hue ?? 110);
+    // ]]></script>
+    <style>
+    :root {background:oklch(.25 .03 var(--hue) / .9);}
+    #top-art line:nth-of-type(odd)  {stroke:oklch(calc(20% + .03%*var(--i)*var(--i)) .3 var(--hue) / calc(var(--i)/10));}
+    #top-art line:nth-of-type(even) {stroke:transparent;}
+    #top-art line {stroke-width:5;}
+
+    .spin use:first-of-type {transform:skew(45deg);}
+    .spin use:last-of-type {transform:skew(-45deg);}
+    </style>
+    <defs>
+        <g id='top-art'>
+            <script>// <![CDATA[
+            [s, place] = [5, Q('#top-art')];
+            for (let i = 1; i <= 20; i++)
+                add(`<line x1='${(i-1/2)*s}' x2='${(i-1/2)*s}' y2='15' style='--i:${2.5*i}'/>`, place);
+            // ]]></script>
+        </g>
+        
+        <filter id='glow' y='-10' x='-10' filterUnits='userSpaceOnUse'>
+            <feOffset in='SourceGraphic' dx='0' dy='0' result='offset'/>
+            <feGaussianBlur in='offset' stdDeviation='0.2' result='blur1'/>
+            <feGaussianBlur in='offset' stdDeviation='0.5' result='blur2'/>
+            <feGaussianBlur in='offset' stdDeviation='1.5' result='blur3'/>
+            <feMerge>
+                <feMergeNode in='blur1'/>
+                <feMergeNode in='blur2'/>
+                <feMergeNode in='blur3'/>
+                <feMergeNode in='SourceGraphic'/>
+            </feMerge>
+        </filter>
+
+        <filter id='shadow' width='30' height='30' y='-50%'>
+            <feDropShadow dx='0' dy='0' stdDeviation='.5' flood-color='black' flood-opacity='.8'/>
+        </filter>
+    </defs>
+
+    <g id='top'>
+        <use href='#top-art'/>
+        <use y='15' href='#top-art'/>
+    </g>
+    <polygon points='65,34 85,34 116,65 116,85 85,116 65,116 34,85 34,65' fill='rgba(255,255,255,.2)'/>
+    <script>// <![CDATA[
+        Q('#top').setAttribute('transform', 'rotate(-45) translate(-55,30)');
+        (q.left || q.right) && (Q('#top').classList = 'spin') && Q('use:last-of-type').setAttribute('x', 30);
+        q.left && Q('#top').setAttribute('transform', 'rotate(135) translate(-65,-60)');
+    // ]]></script>
+</svg>

@@ -1,0 +1,475 @@
+{
+    "HrSh": {
+        "group": "hasbro",
+        "names": {
+            "jap": "ホルスシャッター",
+            "eng": "HorusShatter",
+            "chi": "",
+            "aka": ""
+        },
+        "stat": [""],
+        "desc": "",
+        "attr": ["sta","right","BX","expand"],
+        "aka": "荷魯斯 隼"
+    },
+    "BtGs": {
+        "group": "hasbro",
+        "names": {
+            "jap": "バットガスト",
+            "eng": "BatGust",
+            "chi": "",
+            "aka": "蝙蝠"
+        },
+        "stat": ["36+"],
+        "desc": "（此乃AI臨時圖）",
+        "attr": ["bal","right","BX"],
+        "from": "WhWv"
+    },
+    "AgRm": {
+        "group": "hasbro",
+        "names": {
+            "jap": "イージスランパート",
+            "eng": "AegisRampart",
+            "chi": "",
+            "aka": "護盾城牆"
+        },
+        "stat": ["33-"],
+        "desc": "",
+        "attr": ["def","right","UX","fused"]
+    },
+    "ShSr": {
+        "group": "hasbro",
+        "names": {
+            "jap": "シノビシュリケン",
+            "eng": "ShinobiShuriken",
+            "chi": "",
+            "aka": "忍者飛鏢 手裡劍"
+        },
+        "stat": ["37+"],
+        "desc": "",
+        "attr": ["bal","right","fused","UX"]
+    },
+    "HvRn": {
+        "group": "hasbro",
+        "names": {
+            "jap": "ヘブンズリング",
+            "eng": "HeavensRing",
+            "chi": "",
+            "aka": "天使 光環"
+        },
+        "stat": ["37+"],
+        "desc": "（此乃AI臨時圖）",
+        "attr": ["def","right","BX","expand"]
+    },
+    "VkHc": {
+        "group": "hasbro",
+        "names": {
+            "jap": "ヴァイキングハック",
+            "eng": "VikingHack",
+            "chi": ""
+        },
+        "stat": ["33-"],
+        "desc": "",
+        "attr": ["bal","right","UX"],
+        "from": "HlHm"
+    },
+    "MdSt": {
+        "group": "hasbro",
+        "names": {
+            "jap": "メデューサスタン",
+            "eng": "MedusaStun",
+            "chi": ""
+        },
+        "stat": ["28-"],
+        "desc": "",
+        "attr": ["def","right","UX"],
+        "from": "ShSh"
+    },
+    "KnYl": {
+        "group": "hasbro",
+        "names": {
+            "jap": "コングエール",
+            "eng": "KongYell",
+            "chi": ""
+        },
+        "stat": ["31+"],
+        "desc": "",
+        "attr": ["def","right","BX"],
+        "from": "WyGl"
+    },
+    "DRS": {
+        "group": "remake",
+        "names": {
+            "jap": "ドライガースラッシュ",
+            "eng": "DrigerSlash",
+            "chi": "青翼白虎 銀牙烈虎S"
+        },
+        "stat": ["29-"],
+        "desc": "擁有圓形翼的兩枚刃兼備攻擊及防禦。（2000年發售的陀螺之X代復刻版）",
+        "attr": ["bal","right","BSB"]
+    },
+    "DZS": {
+        "group": "remake",
+        "names": {
+            "jap": "ドランザースパイラル",
+            "eng": "DranzerSpiral",
+            "chi": "朱雀戰神 烈焰飛鳳S"
+        },
+        "stat": ["28="],
+        "desc": "兩枚水平刃産生高攻擊力及持久力，是重視平衡的設計。（2000年發售的陀螺之X代復刻版）",
+        "attr": ["bal","right","BSB"]
+    },
+    "DGS": {
+        "group": "remake",
+        "names": {
+            "jap": "ドラグーンストーム",
+            "eng": "DragoonStorm",
+            "chi": "暴風戰龍 龍騎士S"
+        },
+        "stat": ["25+"],
+        "desc": "左迴轉特化的四枚刃強力地撞走對手。（2000年發售的陀螺之X代復刻版）",
+        "attr": ["att","left","BSB"]
+    },
+    "DCS": {
+        "group": "remake",
+        "names": {
+            "jap": "ドラシエルシールド",
+            "eng": "DracielShield",
+            "chi": "青銅玄武 堅甲戰龜S"
+        },
+        "stat": ["28+"],
+        "desc": "外周的凹凸擅於反擊防禦。（2001年發售的陀螺之X代復刻版）",
+        "attr": ["def","right","BSB"]
+    },
+    "SPg": {
+        "group": "remake",
+        "names": {
+            "jap": "ストームペガシス",
+            "eng": "Storm\\Pegasis",
+            "chi": "烈風\\天馬 暴風\\天馬"
+        },
+        "stat": ["31+"],
+        "desc": "Upper形狀三枚刃把對手撞走及給予傷害。（2009年發售的陀螺之X代復刻版）",
+        "attr": ["att","right","MFB"]
+    },
+    "RLn": {
+        "group": "remake",
+        "names": {
+            "jap": "ロックレオーネ",
+            "eng": "Rock\\Leone",
+            "chi": "岩巖\\獅王 巨岩\\雄獅"
+        },
+        "stat": ["30-"],
+        "desc": "台形形狀六枚刃化解對手攻擊同時給予反擊。（2009年發售的陀螺之X代復刻版）",
+        "attr": ["def","right","MFB"]
+    },
+    "LLd_u": {
+        "group": "remake",
+        "names": {
+            "jap": "ライトニングエルドラゴ_アッパー",
+            "eng": "Lightning\\L-Drago_upper",
+            "chi": "雷霆\\魔龍_高空扣殺 雷霆\\天龍_強擊"
+        },
+        "stat": ["34-"],
+        "desc": "在三處配置向左的Upper刃，重視Upper攻擊。（2009年發售的陀螺之X代復刻版）",
+        "attr": ["att","left","MFB"]
+    },
+    "LLd_r": {
+        "group": "remake",
+        "names": {
+            "jap": "ライトニングエルドラゴ_連打",
+            "eng": "Lightning\\L-Drago_rush",
+            "chi": "雷霆\\魔龍_連環攻擊 雷霆\\天龍_連打"
+        },
+        "stat": ["33+"],
+        "desc": "在三處配置向左的連打刃，重視連打攻擊。（2009年發售的陀螺之X代復刻版）",
+        "attr": ["att","left","MFB"]
+    },
+    "S2": {
+        "group": "remake",
+        "names": {
+            "jap": "ストームスプリガン",
+            "eng": "Storm\\Spriggan",
+            "chi": "暴風\\巨神"
+        },
+        "stat": ["31="],
+        "desc": "由強攻擊的上段兩枚刃與化解性防禦的下段兩枚刃組合而成，一併持有攻防兩方面的性能。（2016年發售的陀螺之X代復刻版）",
+        "attr": ["bal","right","BBB"]
+    },
+    "V2": {
+        "group": "remake",
+        "names": {
+            "jap": "ビクトリーヴァルキリー",
+            "eng": "Victory\\Valkyrie",
+            "chi": "勝利\\武神 天翼\\戰神"
+        },
+        "stat": ["33+"],
+        "desc": "三把大劍的強烈上段攻擊旨在Burst。（2016年發售的陀螺之X代復刻版）",
+        "attr": ["att","right","BBB"]
+    },
+    "X2": {
+        "group": "remake",
+        "names": {
+            "jap": "ゼノエクスカリバー",
+            "eng": "Xeno\\Xcalibur",
+            "chi": "異界\\聖劍 神力\\聖劍"
+        },
+        "stat": ["31-"],
+        "desc": "劍形大型一枚刃，擅於強烈地撞飛對手。（2016年發售的陀螺之X代復刻版）",
+        "attr": ["att","right","BBB"]
+    },
+
+    "Iron": {
+        "group": "collab",
+        "names": {
+            "jap": "アイアンマン",
+            "eng": "Ironman",
+            "chi": "鐵甲奇俠 鋼鐵人"
+        },
+        "stat": ["34-"],
+        "attr": ["def","right","BX","marvel"],
+        "from": "KnSh"
+    },
+    "Than": {
+        "group": "collab",
+        "names": {
+            "jap": "サノス",
+            "eng": "Thanos",
+            "chi": "魁隆 薩諾斯"
+        },
+        "stat": ["29+"],
+        "attr": ["def","right","BX","marvel"],
+        "from": "KnLn"
+    },
+    "Redh": {
+        "group": "collab",
+        "names": {
+            "jap": "レッドハルク",
+            "eng": "Red Hulk",
+            "chi": "紅浩克"
+        },
+        "stat": ["36+"],
+        "attr": ["att","right","BX","marvel"],
+        "from": "TyBt"
+    },
+    "Capt": {
+        "group": "collab",
+        "names": {
+            "jap": "キャプテン・アメリカ",
+            "eng": "Captain America",
+            "chi": "美國隊長"
+        },
+        "stat": ["32+"],
+        "attr": ["att","right","BX","marvel"],
+        "from": "DrSw"
+    },
+    "Spid": {
+        "group": "collab",
+        "names": {
+            "jap": "スパイダーマン",
+            "eng": "Spiderman",
+            "chi": "蜘蛛俠 蜘蛛人"
+        },
+        "stat": ["33="],
+        "attr": ["sta","right","BX","marvel"],
+        "from": "VpTl"
+    },
+    "Veno": {
+        "group": "collab",
+        "names": {
+            "jap": "ヴェノム",
+            "eng": "Venom",
+            "chi": "毒魔 猛毒"
+        },
+        "stat": ["34+"],
+        "attr": ["att","right","BX","marvel"],
+        "from": "DrSw"
+    },
+    "Mile": {
+        "group": "collab",
+        "names": {
+            "jap": "マイルズ・モラレス",
+            "eng": "Miles Morales",
+            "chi": "終極蜘蛛人"
+        },
+        "stat": ["32-"],
+        "attr": ["sta","right","BX","marvel"],
+        "from": "WzAr"
+    },
+    "Gree": {
+        "group": "collab",
+        "names": {
+            "jap": "グリーンゴブリン",
+            "eng": "Green Goblin",
+            "chi": "綠惡魔"
+        },
+        "stat": ["32-"],
+        "attr": ["sta","right","BX","marvel"],
+        "from": "WzAr"
+    },
+    "Luke": {
+        "group": "collab",
+        "names": {
+            "jap": "ルーク・スカイウォーカー",
+            "eng": "Luke Skywalker",
+            "chi": "路克天行者"
+        },
+        "stat": ["31+"],
+        "attr": ["def","right","BX","star-wars"],
+        "from": "KnSh"
+    },
+    "Dart": {
+        "group": "collab",
+        "names": {
+            "jap": "ダース・ベイダー",
+            "eng": "Darth Vader",
+            "chi": "達斯維達"
+        },
+        "stat": ["31-"],
+        "attr": ["def","right","BX","star-wars"],
+        "from": "KnLn"
+    },
+    "Mand": {
+        "group": "collab",
+        "names": {
+            "jap": "マンダロリアン",
+            "eng": "The Mandalorian",
+            "chi": "曼達洛人"
+        },
+        "stat": ["31-"],
+        "attr": ["bal","right","BX","star-wars"],
+        "from": "LnCl"
+    },
+    "Moff": {
+        "group": "collab",
+        "names": {
+            "jap": "モフ・ギデオン",
+            "eng": "Moff Gideon",
+            "chi": "星區長吉迪恩"
+        },
+        "stat": ["31="],
+        "attr": ["bal","right","BX","star-wars"],
+        "from": "HlSc"
+    },
+    "Gene": {
+        "group": "collab",
+        "names": {
+            "jap": "グリーヴァス将軍",
+            "eng": "General Grievous",
+            "chi": "葛里維斯將軍"
+        },
+        "stat": ["31="],
+        "attr": ["def","right","BX","star-wars"],
+        "from": "RhHr"
+    },
+    "Obiw": {
+        "group": "collab",
+        "names": {
+            "jap": "オビ＝ワン・ケノービ",
+            "eng": "Obi-Wan Kenobi",
+            "chi": "歐比王"
+        },
+        "stat": ["31-"],
+        "attr": ["def","right","BX","star-wars"],
+        "from": "KnLn"
+    },
+    "Chew": {
+        "group": "collab",
+        "names": {
+            "jap": "チューバッカ",
+            "eng": "Chewbacca",
+            "chi": "丘巴卡"
+        },
+        "stat": ["32-"],
+        "attr": ["sta","right","BX","star-wars"],
+        "from": "ShDr"
+    },
+    "Stor": {
+        "group": "collab",
+        "names": {
+            "jap": "ストームトルーパー",
+            "eng": "Stormtrooper",
+            "chi": "風暴兵"
+        },
+        "stat": ["33+"],
+        "attr": ["def","right","BX","star-wars"],
+        "from": "RhHr"
+    },
+    "Grog": {
+        "group": "collab",
+        "names": {
+            "jap": "グローグー",
+            "eng": "Grogu",
+            "chi": ""
+        },
+        "stat": ["32="],
+        "attr": ["def","right","BX","star-wars"],
+        "from": "RhHr"
+    },
+    "Opme": {
+        "group": "collab",
+        "names": {
+            "jap": "オプティマスプライム",
+            "eng": "Optimus Prime",
+            "chi": "柯柏文 柯博文"
+        },
+        "stat": ["33="],
+        "attr": ["def","right","BX","transformers"],
+        "from": "KnSh"
+    },
+    "Mega": {
+        "group": "collab",
+        "names": {
+            "jap": "メガトロン",
+            "eng": "Megatron",
+            "chi": "麥加登 密卡登"
+        },
+        "stat": ["32-"],
+        "attr": ["bal","right","BX","transformers"],
+        "from": "HlSc"
+    },
+    "Opal": {
+        "group": "collab",
+        "names": {
+            "jap": "オプティマスプライマル",
+            "eng": "Optimus Primal",
+            "chi": "奧狄武 金剛王"
+        },
+        "stat": ["36-"],
+        "attr": ["att","right","BX","transformers"],
+        "from": "ShEd"
+    },
+    "Star": {
+        "group": "collab",
+        "names": {
+            "jap": "スタースクリーム",
+            "eng": "Starscream",
+            "chi": "星星叫 天王星"
+        },
+        "stat": ["30+"],
+        "attr": ["sta","right","BX","transformers"],
+        "from": "WzAr"
+    },
+    "Bumb": {
+        "group": "collab",
+        "names": {
+            "jap": "バンブルビー",
+            "eng": "Bumblebee",
+            "chi": ""
+        },
+        "stat": ["32-"],
+        "attr": ["def","right","BX","transformers"],
+        "from": "KnSh"
+    },
+    "Shoc": {
+        "group": "collab",
+        "names": {
+            "jap": "ショックウェーブ",
+            "eng": "Shockwave",
+            "chi": ""
+        },
+        "stat": ["32+"],
+        "attr": ["sta","right","BX","transformers"],
+        "from": "VpTl"
+    }
+}
