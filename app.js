@@ -33,7 +33,9 @@
     owned: { blade: new Set(), ratchet: new Set(), bit: new Set() },
     cx: [],            // 自組 CX 上蓋收藏：{id,name,mode,comps,included}
     count: 1,
-    noDup: true,
+    noDup: true,        // 上蓋不重複
+    noDupRatchet: true, // 固鎖不重複
+    noDupBit: true,     // 軸心不重複
   };
 
   function save() {
@@ -48,6 +50,8 @@
         cx: state.cx,
         count: state.count,
         noDup: state.noDup,
+        noDupRatchet: state.noDupRatchet,
+        noDupBit: state.noDupBit,
       })
     );
   }
@@ -62,6 +66,8 @@
       if (Array.isArray(d.cx)) state.cx = d.cx;
       if (d.count) state.count = d.count;
       if (typeof d.noDup === "boolean") state.noDup = d.noDup;
+      if (typeof d.noDupRatchet === "boolean") state.noDupRatchet = d.noDupRatchet;
+      if (typeof d.noDupBit === "boolean") state.noDupBit = d.noDupBit;
     } catch (e) { /* 壞資料就用預設 */ }
   }
 
@@ -359,21 +365,32 @@
     });
   }
 
-  function pickCombo(pools, usedBladeIds) {
-    let blades = pools.blade;
-    if (state.noDup && usedBladeIds && blades.length > usedBladeIds.size) {
-      const fresh = blades.filter((b) => !usedBladeIds.has(b.id));
-      if (fresh.length) blades = fresh;
+  // 從 pool 抽一個；noDup 開啟時盡量避開本批已用過的(池子夠大才避，不夠就允許重複)
+  function pickPart(pool, used, noDup) {
+    let arr = pool;
+    if (noDup && used && pool.length > used.size) {
+      const fresh = pool.filter((p) => !used.has(p.id));
+      if (fresh.length) arr = fresh;
     }
-    const blade = blades.length ? rnd(blades) : null;
+    return arr.length ? rnd(arr) : null;
+  }
+  function pickCombo(pools, used) {
+    const blade = pickPart(pools.blade, used && used.blade, state.noDup);
     const bladeFused = blade && blade.fused;
     // 合體型上蓋：固鎖/軸心一體，皆留空
-    const bit = bladeFused ? null : (pools.bit.length ? rnd(pools.bit) : null);
+    const bit = bladeFused ? null : pickPart(pools.bit, used && used.bit, state.noDupBit);
     // 組合(合體)軸心：與固鎖一體，抽到時不需固鎖
     const bitFused = bit && bit.fused;
-    const ratchet = (bladeFused || bitFused) ? null : (pools.ratchet.length ? rnd(pools.ratchet) : null);
+    const ratchet = (bladeFused || bitFused) ? null : pickPart(pools.ratchet, used && used.ratchet, state.noDupRatchet);
     return { blade, ratchet, bit };
   }
+  // 把一顆 combo 的各部件記入「本批已用」集合
+  function markUsed(used, c) {
+    if (c.blade) used.blade.add(c.blade.id);
+    if (c.ratchet) used.ratchet.add(c.ratchet.id);
+    if (c.bit) used.bit.add(c.bit.id);
+  }
+  function emptyUsed() { return { blade: new Set(), ratchet: new Set(), bit: new Set() }; }
 
   function topCardHTML(idx) {
     return `<div class="top-card" data-idx="${idx}">
@@ -396,9 +413,7 @@
     // 合併名稱：上蓋用中文名，固鎖／軸心用代碼(key)，例「曼達洛人2-80C」
     const name = (blade ? blade.name : "") + (ratchet ? ratchet.code : "") + (bit ? bit.code : "");
     cardEl.querySelector(".top-name").textContent = name || "（空）";
-    const fusedNote = blade && blade.fused
-      ? '<div class="fused-note">⚡ 合體型上蓋：固鎖／軸心整合</div>'
-      : (bit && bit.fused ? '<div class="fused-note">⚡ 組合軸心：與固鎖一體，免裝固鎖</div>' : "");
+    const fusedNote = blade && blade.fused ? '<div class="fused-note">⚡ 合體型上蓋：固鎖／軸心整合</div>' : "";
     cardEl.querySelector(".parts").innerHTML =
       fusedNote +
       `<div class="part-line"><span>上蓋</span><b>${blade ? blade.name : "—"}</b></div>` +
@@ -435,11 +450,11 @@
     $("genBtn").disabled = true;
     $("resultHint").style.display = "none";
 
-    const used = new Set();
+    const used = emptyUsed();
     const combos = [];
     for (let i = 0; i < state.count; i++) {
       const c = pickCombo(pools, used);
-      if (c.blade) used.add(c.blade.id);
+      markUsed(used, c);
       combos.push(c);
     }
 
@@ -463,7 +478,8 @@
     const pools = row._pools, combos = row._combos;
     if (!pools) return;
     busy = true; $("genBtn").disabled = true;
-    const used = new Set(combos.filter((_, i) => i !== idx).map((c) => c.blade && c.blade.id).filter(Boolean));
+    const used = emptyUsed();
+    combos.forEach((c, i) => { if (i !== idx) markUsed(used, c); });
     const c = pickCombo(pools, used);
     combos[idx] = c;
     const card = row.querySelectorAll(".top-card")[idx];
@@ -489,6 +505,10 @@
 
     $("noDup").checked = state.noDup;
     $("noDup").addEventListener("change", (e) => { state.noDup = e.target.checked; save(); });
+    $("noDupRatchet").checked = state.noDupRatchet;
+    $("noDupRatchet").addEventListener("change", (e) => { state.noDupRatchet = e.target.checked; save(); });
+    $("noDupBit").checked = state.noDupBit;
+    $("noDupBit").addEventListener("change", (e) => { state.noDupBit = e.target.checked; save(); });
 
     $("genBtn").addEventListener("click", generate);
 

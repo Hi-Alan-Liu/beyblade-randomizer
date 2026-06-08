@@ -22,9 +22,11 @@
         <button type="button" class="count-btn" data-count="2">2 顆</button>
         <button type="button" class="count-btn" data-count="3">3 顆</button>
       </div>
-      <label class="nodup">
-        <input type="checkbox" id="noDup" checked /> 上蓋不重複
-      </label>
+      <div class="nodup-group">
+        <label class="nodup"><input type="checkbox" id="noDup" checked /> 上蓋不重複</label>
+        <label class="nodup"><input type="checkbox" id="noDupRatchet" checked /> 固鎖不重複</label>
+        <label class="nodup"><input type="checkbox" id="noDupBit" checked /> 軸心不重複</label>
+      </div>
       <button type="button" id="genBtn" class="gen-btn">🎰 隨機產生</button>
     </div>
   </header>
@@ -87,8 +89,18 @@
     </div>
   </div>
 
-  <footer class="foot">
-    圖庫與資料由同層 <code>x</code> 專案搬移（<code>node sync-from-x.js</code> 單向同步）。勾選狀態存於本機瀏覽器。
+  <footer class="site-footer">
+    <p class="foot-disclaimer">
+      本工具僅供<strong>學術研究與愛好者交流</strong>使用，無任何商業合作或營利行為；
+      所有陀螺名稱、圖像與商標權利均屬原權利人所有。
+    </p>
+    <p class="foot-meta">
+      設計者：<strong>AlanLiu</strong>
+      <span class="foot-sep">·</span>
+      <a class="foot-link" href="https://hi-alan-liu.github.io/beyblade-champion/" target="_blank" rel="noopener">🏆 排名卡產生器</a>
+      <span class="foot-sep">·</span>
+      <span>圖庫資料由 <code>x</code> 專案同步</span>
+    </p>
   </footer>
 
   <script src="assets/db.bundle.js"></script>
