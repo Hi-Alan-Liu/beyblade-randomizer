@@ -504,6 +504,15 @@
 
     $("genBtn").addEventListener("click", generate);
 
+    // 設定 Modal
+    const setModal = $("settingsModal");
+    $("settingsBtn").addEventListener("click", () => setModal.classList.remove("hidden"));
+    $("settingsClose").addEventListener("click", () => setModal.classList.add("hidden"));
+    setModal.addEventListener("click", (e) => { if (e.target.id === "settingsModal") setModal.classList.add("hidden"); });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && !setModal.classList.contains("hidden")) setModal.classList.add("hidden");
+    });
+
     // 庫存主分頁
     document.querySelectorAll(".inv-tab").forEach((t) =>
       t.addEventListener("click", () => {

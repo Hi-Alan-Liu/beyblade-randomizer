@@ -61,6 +61,21 @@ body {
 .nodup { font-size: 13px; color: var(--txt-dim); display: inline-flex; align-items: center; gap: 6px; cursor: pointer; user-select: none; }
 .nodup input { accent-color: var(--gold); width: 16px; height: 16px; }
 
+.settings-btn {
+  border: 1px solid var(--line); background: var(--panel); color: var(--txt);
+  padding: 11px 22px; border-radius: 999px; font-size: 15px; font-weight: 700; cursor: pointer;
+  transition: border-color 0.12s, background 0.12s, color 0.12s;
+}
+.settings-btn:hover { border-color: var(--gold); color: var(--gold); }
+
+/* ===== 設定 Modal（沿用 .modal-overlay/.modal 基底） ===== */
+.settings-modal { width: min(440px, 100%); }
+.settings-body { padding: 18px 20px 22px; display: flex; flex-direction: column; gap: 20px; }
+.settings-section { display: flex; flex-direction: column; gap: 10px; }
+.settings-label { margin: 0; font-size: 14px; font-weight: 700; color: var(--gold); }
+.settings-section .nodup-group { flex-direction: column; gap: 12px; }
+.settings-section .nodup { font-size: 14px; }
+
 .gen-btn {
   border: 0; cursor: pointer;
   padding: 12px 26px; border-radius: 999px; font-size: 16px; font-weight: 800; letter-spacing: 1px;
@@ -78,7 +93,7 @@ body {
 .reel-row { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
 
 .top-card {
-  width: 320px; background: linear-gradient(180deg, var(--panel), var(--bg2));
+  width: 230px; background: linear-gradient(180deg, var(--panel), var(--bg2));
   border: 1px solid var(--line); border-radius: var(--radius);
   box-shadow: var(--shadow); overflow: hidden; position: relative;
 }
@@ -86,10 +101,9 @@ body {
   position: absolute; top: 8px; left: 10px; font-size: 12px; font-weight: 700;
   color: var(--gold); background: rgba(0, 0, 0, 0.35); padding: 2px 9px; border-radius: 999px;
 }
-/* 拉霸改為橫式：三格並排（上蓋／固鎖／軸心） */
-.reels { display: flex; flex-direction: row; gap: 8px; padding: 30px 14px 12px; }
+/* 預設（平板／電腦）：三格直式堆疊；手機改為橫式（見 @media） */
+.reels { display: flex; flex-direction: column; gap: 2px; padding: 30px 14px 12px; }
 .reel {
-  flex: 1 1 0; min-width: 0;
   height: 116px; overflow: hidden; position: relative;
   background: radial-gradient(120% 80% at 50% 0%, rgba(74, 163, 255, 0.08), transparent), #0a0f18;
   border: 1px solid var(--line); border-radius: 10px;
@@ -287,8 +301,10 @@ body {
   .gen-bar { justify-content: space-between; }
   .gen-btn { flex: 1; }
 
-  /* 結果卡（手機）：三顆陀螺更靠近、名稱貼齊陀螺下方、重抽移到最右只顯示「重抽」 */
-  .reels { gap: 4px; padding: 30px 6px 4px; }
+  /* 結果卡（手機）：拉霸改橫式、三顆陀螺更靠近、名稱貼齊陀螺下方、重抽移到最右只顯示「重抽」 */
+  .top-card { width: 320px; max-width: calc(100vw - 44px); }
+  .reels { flex-direction: row; gap: 4px; padding: 30px 6px 4px; }
+  .reel { flex: 1 1 0; min-width: 0; }
   .top-meta {
     display: flex; align-items: center; justify-content: space-between;
     gap: 8px; padding: 4px 10px 10px; text-align: left;
