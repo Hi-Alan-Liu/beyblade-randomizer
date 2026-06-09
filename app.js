@@ -402,7 +402,7 @@
       </div>
       <div class="top-meta">
         <div class="top-name"></div>
-        <button type="button" class="reroll-one">🎲 重抽這顆</button>
+        <button type="button" class="reroll-one"><span class="rr-icon">🎲</span><span class="rr-long"> 重抽這顆</span></button>
       </div>
     </div>`;
   }

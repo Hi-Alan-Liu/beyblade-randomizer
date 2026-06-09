@@ -286,4 +286,15 @@ body {
   .topbar { flex-direction: column; align-items: stretch; }
   .gen-bar { justify-content: space-between; }
   .gen-btn { flex: 1; }
+
+  /* 結果卡（手機）：三顆陀螺更靠近、名稱貼齊陀螺下方、重抽移到最右只顯示「重抽」 */
+  .reels { gap: 4px; padding: 30px 6px 4px; }
+  .top-meta {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 8px; padding: 4px 10px 10px; text-align: left;
+  }
+  .top-name { margin: 0; flex: 1 1 auto; min-width: 0; }
+  .reroll-one { width: auto; flex: 0 0 auto; padding: 6px 12px; }
+  .reroll-one .rr-icon, .reroll-one .rr-long { display: none; }
+  .reroll-one::after { content: "重抽"; }
 }
