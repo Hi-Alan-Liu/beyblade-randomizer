@@ -69,8 +69,10 @@ body {
 .settings-btn:hover { border-color: var(--gold); color: var(--gold); }
 
 /* ===== 設定 Modal（沿用 .modal-overlay/.modal 基底） ===== */
-.settings-modal { width: min(440px, 100%); }
-.settings-body { padding: 18px 20px 22px; display: flex; flex-direction: column; gap: 20px; }
+.modal.settings-modal { width: min(260px, 100%); }
+.settings-body { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 18px; }
+.settings-section .count-pick { display: flex; }
+.settings-section .count-btn { flex: 1; padding: 7px 10px; text-align: center; }
 .settings-section { display: flex; flex-direction: column; gap: 10px; }
 .settings-label { margin: 0; font-size: 14px; font-weight: 700; color: var(--gold); }
 .settings-section .nodup-group { flex-direction: column; gap: 12px; }
