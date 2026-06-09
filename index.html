@@ -97,11 +97,32 @@
     <p class="foot-meta">
       設計者：<strong>AlanLiu</strong>
       <span class="foot-sep">·</span>
-      <a class="foot-link" href="https://hi-alan-liu.github.io/beyblade-champion/" target="_blank" rel="noopener">🏆 排名卡產生器</a>
+      <a class="foot-link" href="https://hi-alan-liu.github.io/beyblade-champion/" target="_blank" rel="noopener">陀螺配置產生器</a>
       <span class="foot-sep">·</span>
-      <span>圖庫資料由 <code>x</code> 專案同步</span>
+      <button type="button" class="foot-changelog-btn" id="btnChangelog">📋 版本更新紀錄</button>
     </p>
   </footer>
+
+  <!-- 版本更新紀錄 Modal -->
+  <div class="modal-overlay hidden" id="changelogModal">
+    <div class="modal changelog-modal" role="dialog" aria-modal="true" aria-labelledby="changelogTitle">
+      <div class="modal-head">
+        <h2 id="changelogTitle">版本更新紀錄</h2>
+        <button type="button" class="modal-close" id="btnChangelogClose" aria-label="關閉">✕</button>
+      </div>
+      <div class="changelog-body">
+        <ul class="changelog-list">
+          <li class="changelog-item">
+            <span class="changelog-date">2026 / 06 / 09</span>
+            <ul class="changelog-points">
+              <li>拉霸結果改為橫式排列，僅顯示完整陀螺名稱。</li>
+              <li>頁尾新增版本更新紀錄。</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <script src="assets/db.bundle.js"></script>
   <script src="db.js"></script>

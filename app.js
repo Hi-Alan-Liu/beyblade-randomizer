@@ -402,7 +402,6 @@
       </div>
       <div class="top-meta">
         <div class="top-name"></div>
-        <div class="parts"></div>
         <button type="button" class="reroll-one">🎲 重抽這顆</button>
       </div>
     </div>`;
@@ -410,15 +409,9 @@
 
   function revealMeta(cardEl, combo) {
     const { blade, ratchet, bit } = combo;
-    // 合併名稱：上蓋用中文名，固鎖／軸心用代碼(key)，例「曼達洛人2-80C」
+    // 僅顯示完整陀螺名稱：上蓋用中文名，固鎖／軸心用代碼(key)，例「蝙蝠4-55LR」
     const name = (blade ? blade.name : "") + (ratchet ? ratchet.code : "") + (bit ? bit.code : "");
     cardEl.querySelector(".top-name").textContent = name || "（空）";
-    const fusedNote = blade && blade.fused ? '<div class="fused-note">⚡ 合體型上蓋：固鎖／軸心整合</div>' : "";
-    cardEl.querySelector(".parts").innerHTML =
-      fusedNote +
-      `<div class="part-line"><span>上蓋</span><b>${blade ? blade.name : "—"}</b></div>` +
-      `<div class="part-line"><span>固鎖</span><b>${ratchet ? ratchet.code : "—"}</b></div>` +
-      `<div class="part-line"><span>軸心</span><b>${bit ? bit.code + (bit.fused ? " · 合體" : "") : "—"}</b></div>`;
   }
 
   async function animateCard(cardEl, combo, pools, topIdx) {
@@ -429,7 +422,6 @@
       bit: cardEl.querySelector('.reel[data-part="bit"]'),
     };
     cardEl.querySelector(".top-name").textContent = "";
-    cardEl.querySelector(".parts").innerHTML = "";
     // 三格同時起跑，依序定格（上蓋→軸心→固鎖）
     const pBlade = spinReel(reels.blade, pools.blade, combo.blade, base);
     const pRatchet = spinReel(reels.ratchet, pools.ratchet, combo.ratchet, base + 450);
@@ -538,6 +530,15 @@
     );
     $("cxName").addEventListener("input", () => { cxDraft.nameTouched = true; });
     $("cxSave").addEventListener("click", saveCx);
+
+    // 版本更新紀錄
+    const clModal = $("changelogModal");
+    $("btnChangelog").addEventListener("click", () => clModal.classList.remove("hidden"));
+    $("btnChangelogClose").addEventListener("click", () => clModal.classList.add("hidden"));
+    clModal.addEventListener("click", (e) => { if (e.target.id === "changelogModal") clModal.classList.add("hidden"); });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && !clModal.classList.contains("hidden")) clModal.classList.add("hidden");
+    });
   }
 
   // ===== boot =====

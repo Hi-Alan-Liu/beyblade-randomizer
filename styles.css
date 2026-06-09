@@ -78,7 +78,7 @@ body {
 .reel-row { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
 
 .top-card {
-  width: 230px; background: linear-gradient(180deg, var(--panel), var(--bg2));
+  width: 320px; background: linear-gradient(180deg, var(--panel), var(--bg2));
   border: 1px solid var(--line); border-radius: var(--radius);
   box-shadow: var(--shadow); overflow: hidden; position: relative;
 }
@@ -86,8 +86,10 @@ body {
   position: absolute; top: 8px; left: 10px; font-size: 12px; font-weight: 700;
   color: var(--gold); background: rgba(0, 0, 0, 0.35); padding: 2px 9px; border-radius: 999px;
 }
-.reels { display: flex; flex-direction: column; gap: 2px; padding: 30px 14px 12px; }
+/* 拉霸改為橫式：三格並排（上蓋／固鎖／軸心） */
+.reels { display: flex; flex-direction: row; gap: 8px; padding: 30px 14px 12px; }
 .reel {
+  flex: 1 1 0; min-width: 0;
   height: 116px; overflow: hidden; position: relative;
   background: radial-gradient(120% 80% at 50% 0%, rgba(74, 163, 255, 0.08), transparent), #0a0f18;
   border: 1px solid var(--line); border-radius: 10px;
@@ -243,6 +245,33 @@ body {
 .site-footer .foot-link { color: var(--gold); text-decoration: none; font-weight: 600; }
 .site-footer .foot-link:hover { color: var(--accent); text-decoration: underline; }
 .site-footer code { background: var(--panel); padding: 1px 6px; border-radius: 5px; color: var(--gold-dim); }
+.foot-changelog-btn {
+  background: transparent; border: 1px solid var(--line); border-radius: 999px;
+  color: var(--gold); padding: 4px 14px; font-size: 12.5px; font-weight: 600;
+  cursor: pointer; transition: border-color .12s, background .12s, color .12s;
+}
+.foot-changelog-btn:hover { border-color: var(--gold); background: rgba(231, 197, 107, .08); color: var(--accent); }
+
+/* ===== 版本更新紀錄 Modal（沿用 .modal-overlay/.modal 基底） ===== */
+.changelog-modal { width: min(520px, 100%); }
+.changelog-body { padding: 16px 20px 20px; overflow-y: auto; }
+.changelog-list { list-style: none; margin: 0; padding: 0; }
+.changelog-item {
+  position: relative; padding: 0 0 16px 16px;
+  border-left: 2px solid var(--line);
+}
+.changelog-item:last-child { padding-bottom: 0; }
+.changelog-item::before {
+  content: ""; position: absolute; left: -6px; top: 4px;
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--accent); box-shadow: 0 0 0 3px rgba(74, 163, 255, .18);
+}
+.changelog-date {
+  display: block; font-size: 13px; font-weight: 800;
+  color: var(--gold); letter-spacing: .5px; margin-bottom: 6px;
+}
+.changelog-points { margin: 0; padding-left: 18px; color: var(--txt); font-size: 14px; line-height: 1.65; }
+.changelog-points li { margin: 2px 0; }
 
 .toast {
   position: fixed; left: 50%; bottom: 26px; transform: translateX(-50%) translateY(20px);
