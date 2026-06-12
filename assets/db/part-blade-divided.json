@@ -26,7 +26,7 @@
         },
         "O": {
             "names": {"jap":"アウター", "eng":"Outer"},
-            "stat": [""],
+            "stat": ["4-"],
             "desc": "外側加厚的五枚刃形狀提高離心力。",
             "attr": ["sta","right"]
         }
@@ -248,7 +248,7 @@
     "metal": {
         "Wh": {
             "names": {"jap":"ウィップ", "eng":"Whip"},
-            "stat": [""],
+            "stat": ["27+"],
             "desc": "順滑圓弧狀四枚刃化解對手攻擊。",
             "attr": ["sta","right"]
         },

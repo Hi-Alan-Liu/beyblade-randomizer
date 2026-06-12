@@ -156,7 +156,7 @@
     "Nr": {
         "group": "round",
         "names": {"jap": "ナロー", "eng": "Narrow"},
-        "stat": ["",10],
+        "stat": ["2=",10],
         "desc": "細球狀軸端長久地迴轉；十枚齒Gear於X Dash時減輕持久損失。",
         "attr": ["sta"]
     },

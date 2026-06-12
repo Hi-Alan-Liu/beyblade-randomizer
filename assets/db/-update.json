@@ -1,11 +1,11 @@
 {
   "part-blade":        "2026/06/05 18:33:00",
   "part-blade-collab": "2026/06/05 18:33:00",
-  "part-bit":          "2026/05/18 17:10:00",
   "meta":              "2026/05/18 17:10:00",
-  "part-blade-divided":"2026/05/30 12:48:00",
+  "part-bit":          "2026/06/10 23:02:00",
+  "part-blade-divided":"2026/06/10 23:02:00",
   "prod-gear":         "2026/05/16 00:10:00",
-  "prod-beys":         "2026/05/27 23:35:00",
+  "prod-beys":         "2026/06/12 15:54:00",
   "prod-keihin":       "2026/05/27 23:35:00",
   "part-ratchet":      "2026/03/28 20:31:00",
   "news": {
@@ -21,10 +21,23 @@
       "code":"BX-51 string launcher",
       "imgs":["https://m.media-amazon.com/images/I/51gwI+uzFUL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/51hxFoeZOQL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/613XPaNe6-L._AC_SX679_.jpg"]
     }],
-    "2026-07":[{
-      "code":"UX-20 starter"
+    "2026-07-09":[{
+      "code":"BXG-??","name":["ドレイクブレイブG4-70I","Drake Brave G4-70I"],"type":"att",
+      "desc":["APP新抽獎獎品","無論免費的換領券或付費的購買券都可能抽到此","〔Gravity〕Assist Blade：兩側有金屬"],
+      "imgs":["https://preview.redd.it/all-the-beyblades-featured-in-this-months-magazine-v0-xx4n3yab9g6h1.jpg?width=1080&crop=smart&auto=webp&s=faf06f31204bc7e5025c590a3ad13c40e4121bf4"]
     },{
-      "code":"BX-50 random booster"
+      "code":"BXG-??",
+      "desc":["Kraken Wriggle S3-70O<br>Hornet Fort R7-60T<br>Buck's Antlers B2-60D","三款都是APP抽獎購買品（非組合）","Hasbro中已推出無塗裝版"],
+      "imgs":["https://preview.redd.it/all-the-beyblades-featured-in-this-months-magazine-v0-ixok4oyb9g6h1.jpg?width=1080&crop=smart&auto=webp&s=24e991043fa5fe5dab1baa1b11d1b6c77878a608"]
+    }],
+    "2026-07-11":[{
+      "code":"UX-20 starter","name":["グローリーワルキューレLF","Glory Valkyrie LF"],"type":"att",
+      "desc":["與2017年陀螺【God Valkyrie】有相同的回彈彈簧機關"],
+      "imgs":["https://preview.redd.it/all-the-beyblades-featured-in-this-months-magazine-v0-gh00b2sa9g6h1.jpg?width=1080&crop=smart&auto=webp&s=46a0e751e8fd218ce2bcccb22c1efd92815e9429"]
+    },{
+      "code":"BX-50 random booster","name":["ヘブンズリング0-80DS","Heaven's Ring 0-80DS"],"type":"def",
+      "desc":["〔Disk Spike〕Bit：前所未有最薄的血環、最低爆裂抵抗！（20）"],
+      "imgs":["https://preview.redd.it/all-the-beyblades-featured-in-this-months-magazine-v0-ymezplhc9g6h1.jpg?width=1080&crop=smart&auto=webp&s=8987c6a469650246880a849c2aab22bcf71c9cdf"]
     },{
       "code":"BXG-47 starter"
     }],
